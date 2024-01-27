@@ -8,13 +8,14 @@
     "webpack-dev-server": "webpack-dev-server",
     "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
     "prod": "yarn webpack --env mode=production",
-    "dev": "yarn webpack-dev-server --env mode=development --watch",
+    "dev": "yarn webpack-dev-server --env mode=development --hot --watch",
     "prod:debug": "yarn debug --env mode=production",
     "dev:debug": "yarn debug --env mode=development"
   },
   "devDependencies": {
     "css-loader": "^6.9.1",
     "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.7.7",
     "style-loader": "^3.3.4",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4",

@@ -4,7 +4,7 @@ import {createButton} from "./button";
 import {makeColorStyle} from "./button-styles";
 
 // import {getDemo} from './commonjs-named-exports'
-import './style.css';
+import css from './style.css';
 
 const button = createButton('Start');
 button.style = makeColorStyle('#F3D7CA')
