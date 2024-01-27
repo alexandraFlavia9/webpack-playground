@@ -1,7 +1,11 @@
-import nav from "./nav";
-import {top, bottom} from "./footer";
-import buildButton from "./button";
-import {getDemo} from './commonjs-named-exports'
-import * as style from './style.css';
+// import nav from "./nav";
+// import {top, bottom} from "./footer";
+import {createButton} from "./button";
+import {makeColorStyle} from "./button-styles";
 
-console.log(nav(), top, bottom, buildButton('Create'), getDemo());
+// import {getDemo} from './commonjs-named-exports'
+import './style.css';
+
+const button = createButton('Start');
+button.style = makeColorStyle('#F3D7CA')
+document.body.appendChild(button);
