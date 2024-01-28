@@ -14,7 +14,11 @@ module.exports = (env) =>  {
             path: path.resolve(__dirname, 'dist'),
             filename: 'bundle.js'
         },
-
+        module: {
+            rules: [
+                {test: /\.jpe?g$/, use: [{loader: 'url-loader', options: { limit: 5000} }]}
+            ]
+        },
         plugins: [new HtmlWebpackPlugin(), new webpack.ProgressPlugin()]
     }, 
     modeConfig(env.mode))
