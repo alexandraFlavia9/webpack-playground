@@ -10,6 +10,7 @@
     "prod": "yarn webpack --env mode=production",
     "dev": "yarn webpack-dev-server --env mode=development --hot --watch",
     "prod:debug": "yarn debug --env mode=production",
+    "prod:analyze": "yarn prod --env presets=analyze", 
     "dev:debug": "yarn debug --env mode=development"
   },
   "devDependencies": {
@@ -20,6 +21,7 @@
     "style-loader": "^3.3.4",
     "url-loader": "^4.1.1",
     "webpack": "^5.89.0",
+    "webpack-bundle-analyzer": "^4.10.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1",
     "webpack-merge": "^5.10.0"
